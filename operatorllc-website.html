@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OperatorLLC — Digital Growth Architects for Corporate & Local Markets</title>
+<meta name="description" content="OperatorLLC is Austin Texas's premier full-service digital growth agency. We bridge corporate scale with local agility — serving real estate, manufacturing, steel industries and local e-commerce brands.">
+<meta name="keywords" content="digital agency Austin Texas, B2B digital marketing, industrial SEO, local ecommerce growth, GEO optimization, AI marketing">
+<meta property="og:title" content="OperatorLLC — Digital Growth Architects">
+<meta property="og:description" content="Bridging Corporate Scale with Local Agility. Austin TX digital growth agency.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://operatorllc.com">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":["LocalBusiness","ProfessionalService","Corporation"],"name":"OperatorLLC","description":"Full-Service Digital Growth & Brand Building Agency","address":{"@type":"PostalAddress","addressLocality":"Austin","addressRegion":"TX","addressCountry":"US"},"url":"https://operatorllc.com","serviceType":["Digital Marketing","B2B Strategy","SEO","Web Development","AI Marketing"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0A192F;
+  --navy-light: #112240;
+  --navy-mid: #1a2f52;
+  --steel: #8892B0;
+  --steel-light: #a8b2d8;
+  --orange: #FF6B35;
+  --orange-dark: #e55a24;
+  --cream: #F8F9FA;
+  --cream-dark: #eef0f3;
+  --white: #ffffff;
+  --text-primary: #CCD6F6;
+  --text-secondary: #8892B0;
+  --gold: #FFD700;
+  --teal: #64FFDA;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--navy);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* ========== TYPOGRAPHY ========== */
+h1, h2, h3 { font-family: 'Playfair Display', serif; line-height: 1.15; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 2px; }
+
+/* ========== NAVIGATION ========== */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 0 5%;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 72px;
+  background: rgba(10, 25, 47, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,107,53,0.15);
+  transition: all 0.3s;
+}
+nav.scrolled { height: 60px; box-shadow: 0 4px 30px rgba(0,0,0,0.4); }
+
+.nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  text-decoration: none;
+}
+.nav-logo-icon {
+  width: 40px; height: 40px;
+  background: linear-gradient(135deg, #1a5faa, #0e3a7a);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px; font-weight: 800;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.nav-logo-icon::after {
+  content: '';
+  position: absolute; right: -6px; top: 50%;
+  transform: translateY(-50%);
+  width: 0; height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid rgba(100,255,218,0.5);
+}
+.nav-logo-text { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: white; }
+.nav-logo-text span { color: var(--orange); }
+
+.nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+.nav-links a {
+  text-decoration: none;
+  font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--steel-light);
+  transition: color 0.2s;
+  position: relative;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -4px; left: 0; right: 0;
+  height: 1px; background: var(--orange);
+  transform: scaleX(0); transition: transform 0.2s;
+}
+.nav-links a:hover { color: white; }
+.nav-links a:hover::after { transform: scaleX(1); }
+
+.nav-badge {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.06em;
+  padding: 2px 7px; border-radius: 3px;
+  margin-left: 6px;
+}
+.badge-corp { background: rgba(255,107,53,0.2); color: var(--orange); }
+.badge-local { background: rgba(100,255,218,0.15); color: var(--teal); }
+
+.nav-cta {
+  background: var(--orange);
+  color: white !important;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: 600 !important;
+}
+.nav-cta::after { display: none !important; }
+.nav-cta:hover { background: var(--orange-dark) !important; color: white !important; }
+
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--steel-light); transition: all 0.3s; border-radius: 2px; }
+
+/* ========== HERO ========== */
+#hero {
+  min-height: 100vh;
+  display: flex; flex-direction: column;
+  position: relative; overflow: hidden;
+  padding-top: 72px;
+}
+
+.hero-bg {
+  position: absolute; inset: 0;
+  background: var(--navy);
+}
+
+.hero-grid-lines {
+  position: absolute; inset: 0; opacity: 0.04;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.hero-split {
+  display: flex; flex: 1;
+  min-height: calc(100vh - 72px);
+  position: relative;
+}
+
+/* Left — Corporate */
+.hero-corp {
+  flex: 1;
+  background: linear-gradient(135deg, #0A192F 0%, #0d2040 50%, #0f2548 100%);
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: flex-start;
+  padding: 80px 60px 80px 8%;
+  position: relative; overflow: hidden;
+}
+.hero-corp::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FF6B35' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.hero-local {
+  flex: 1;
+  background: linear-gradient(135deg, #112240 0%, #142742 50%, #162d4d 100%);
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: flex-end;
+  padding: 80px 8% 80px 60px;
+  position: relative; overflow: hidden;
+  text-align: right;
+}
+.hero-local::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2364FFDA' fill-opacity='0.03' fill-rule='evenodd'%3E%3Ccircle cx='20' cy='20' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Center bridge */
+.hero-center {
+  position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex; flex-direction: column;
+  align-items: center; gap: 16px;
+  text-align: center;
+}
+
+.hero-logo-badge {
+  width: 88px; height: 88px;
+  background: var(--navy);
+  border: 3px solid var(--orange);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px; font-weight: 800; color: var(--orange);
+  box-shadow: 0 0 0 8px rgba(10,25,47,0.9), 0 0 40px rgba(255,107,53,0.3);
+  animation: pulse-ring 3s ease-in-out infinite;
+}
+@keyframes pulse-ring {
+  0%, 100% { box-shadow: 0 0 0 8px rgba(10,25,47,0.9), 0 0 40px rgba(255,107,53,0.3); }
+  50% { box-shadow: 0 0 0 8px rgba(10,25,47,0.9), 0 0 60px rgba(255,107,53,0.5); }
+}
+
+.bridge-line {
+  position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px; height: 2px;
+  background: linear-gradient(90deg, rgba(255,107,53,0), rgba(255,107,53,0.8), rgba(255,107,53,0));
+  animation: bridge-glow 2s ease-in-out infinite;
+}
+.bridge-line-v {
+  width: 2px; height: 200px;
+  background: linear-gradient(180deg, rgba(255,107,53,0), rgba(255,107,53,0.8), rgba(255,107,53,0));
+}
+@keyframes bridge-glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.hero-divider {
+  position: absolute; left: 50%; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, rgba(255,107,53,0.6), rgba(255,107,53,1), rgba(255,107,53,0.6), transparent);
+  z-index: 5;
+}
+
+.hero-sector-tag {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
+  padding: 6px 14px; border-radius: 3px;
+  display: inline-block; margin-bottom: 20px;
+}
+.tag-corp { background: rgba(255,107,53,0.15); color: var(--orange); border: 1px solid rgba(255,107,53,0.3); }
+.tag-local { background: rgba(100,255,218,0.1); color: var(--teal); border: 1px solid rgba(100,255,218,0.25); }
+
+.hero-headline {
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.hero-headline .accent { color: var(--orange); }
+.hero-headline .accent-teal { color: var(--teal); }
+
+.hero-sub {
+  font-size: 16px; color: var(--steel-light);
+  max-width: 380px;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+.hero-local .hero-sub { margin-left: auto; }
+
+.hero-industries {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px;
+}
+.hero-local .hero-industries { justify-content: flex-end; }
+
+.ind-badge {
+  font-size: 11px; font-weight: 500; letter-spacing: 0.05em;
+  padding: 4px 10px; border-radius: 20px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--steel-light);
+}
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 28px;
+  border-radius: 4px;
+  font-size: 14px; font-weight: 600; letter-spacing: 0.04em;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer; border: none;
+}
+.btn-primary {
+  background: var(--orange); color: white;
+  box-shadow: 0 4px 20px rgba(255,107,53,0.3);
+}
+.btn-primary:hover { background: var(--orange-dark); transform: translateY(-1px); box-shadow: 0 6px 24px rgba(255,107,53,0.4); }
+
+.btn-outline {
+  background: transparent; color: var(--teal);
+  border: 1px solid rgba(100,255,218,0.4);
+}
+.btn-outline:hover { background: rgba(100,255,218,0.05); border-color: var(--teal); transform: translateY(-1px); }
+
+.hero-stats {
+  display: flex; gap: 32px; margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.hero-local .hero-stats { justify-content: flex-end; }
+
+.stat-item { text-align: left; }
+.hero-local .stat-item { text-align: right; }
+.stat-number { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 800; color: white; }
+.stat-number .stat-accent { color: var(--orange); }
+.stat-label { font-size: 12px; color: var(--steel); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 2px; }
+
+/* Hero scroll indicator */
+.hero-scroll {
+  position: absolute; bottom: 32px; left: 50%;
+  transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  color: var(--steel); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-6px); } }
+.scroll-dot { width: 20px; height: 32px; border: 1px solid rgba(255,255,255,0.2); border-radius: 10px; display: flex; align-items: flex-start; justify-content: center; padding: 4px; }
+.scroll-dot::after { content: ''; width: 4px; height: 8px; background: var(--orange); border-radius: 2px; animation: scroll-anim 1.5s ease-in-out infinite; }
+@keyframes scroll-anim { 0% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(12px); opacity: 0; } }
+
+/* ========== TRUST BAR ========== */
+#trust-bar {
+  background: var(--navy-light);
+  border-top: 1px solid rgba(255,107,53,0.1);
+  border-bottom: 1px solid rgba(255,107,53,0.1);
+  padding: 24px 5%;
+}
+.trust-inner {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  flex-wrap: wrap;
+}
+.trust-label { font-size: 12px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--steel); white-space: nowrap; }
+.trust-clients { display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+.client-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px; font-weight: 600;
+  color: var(--steel-light);
+  opacity: 0.7; transition: opacity 0.2s;
+  white-space: nowrap;
+}
+.client-name:hover { opacity: 1; color: white; }
+.trust-divider { width: 1px; height: 24px; background: rgba(255,255,255,0.1); }
+.trust-badges { display: flex; gap: 12px; }
+.ind-chip {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.06em;
+  padding: 5px 12px; border-radius: 20px;
+}
+.chip-real { background: rgba(255,215,0,0.1); color: var(--gold); border: 1px solid rgba(255,215,0,0.2); }
+.chip-mfg { background: rgba(255,107,53,0.1); color: var(--orange); border: 1px solid rgba(255,107,53,0.2); }
+.chip-steel { background: rgba(136,146,176,0.15); color: var(--steel-light); border: 1px solid rgba(136,146,176,0.3); }
+.chip-ecom { background: rgba(100,255,218,0.1); color: var(--teal); border: 1px solid rgba(100,255,218,0.2); }
+
+/* ========== SECTIONS COMMON ========== */
+section { padding: 100px 5%; }
+
+.section-tag {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--orange);
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-bottom: 16px;
+}
+.section-tag::before { content: ''; width: 24px; height: 1px; background: var(--orange); }
+
+.section-title {
+  font-size: clamp(28px, 3.5vw, 48px);
+  font-weight: 800;
+  color: white;
+  margin-bottom: 16px;
+}
+.section-title .accent { color: var(--orange); }
+.section-title .accent-teal { color: var(--teal); }
+.section-sub { font-size: 17px; color: var(--steel-light); max-width: 600px; line-height: 1.7; }
+
+/* ========== DUAL SERVICES ========== */
+#services { background: var(--navy); }
+.services-dual { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 60px; }
+
+.services-col-header {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid;
+}
+.corp-col .services-col-header { border-color: rgba(255,107,53,0.4); }
+.local-col .services-col-header { border-color: rgba(100,255,218,0.3); }
+
+.col-icon {
+  width: 48px; height: 48px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+}
+.corp-col .col-icon { background: rgba(255,107,53,0.1); }
+.local-col .col-icon { background: rgba(100,255,218,0.08); }
+.col-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: white; }
+.col-subtitle { font-size: 13px; color: var(--steel); margin-top: 2px; }
+
+.service-item {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.2s;
+}
+.service-item:hover { padding-left: 8px; }
+
+.service-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; color: var(--steel);
+  min-width: 28px; margin-top: 4px;
+}
+.service-info { flex: 1; }
+.service-name { font-size: 15px; font-weight: 500; color: var(--text-primary); margin-bottom: 4px; }
+.service-desc { font-size: 13px; color: var(--steel); line-height: 1.5; }
+.service-arrow { color: var(--steel); font-size: 14px; margin-top: 2px; transition: all 0.2s; }
+.service-item:hover .service-arrow { color: var(--orange); transform: translateX(4px); }
+
+/* ========== AI SERVICES ========== */
+#ai-services {
+  background: linear-gradient(180deg, var(--navy) 0%, var(--navy-light) 50%, var(--navy) 100%);
+  position: relative; overflow: hidden;
+}
+#ai-services::before {
+  content: '';
+  position: absolute;
+  top: -200px; left: 50%; transform: translateX(-50%);
+  width: 800px; height: 800px;
+  background: radial-gradient(circle, rgba(100,255,218,0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.ai-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px; margin-top: 56px;
+}
+
+.ai-card {
+  background: rgba(17,34,64,0.6);
+  border: 1px solid rgba(100,255,218,0.1);
+  border-radius: 12px;
+  padding: 28px;
+  transition: all 0.3s;
+  position: relative; overflow: hidden;
+}
+.ai-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--teal), transparent);
+  opacity: 0; transition: opacity 0.3s;
+}
+.ai-card:hover { border-color: rgba(100,255,218,0.25); transform: translateY(-4px); }
+.ai-card:hover::before { opacity: 1; }
+
+.ai-card-icon { font-size: 28px; margin-bottom: 16px; }
+.ai-card-title { font-size: 17px; font-weight: 600; color: white; margin-bottom: 8px; }
+.ai-card-code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px; color: var(--teal);
+  letter-spacing: 0.1em; margin-bottom: 10px;
+}
+.ai-card-desc { font-size: 14px; color: var(--steel-light); line-height: 1.65; }
+
+.ai-badge {
+  display: inline-block; margin-top: 14px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px; font-weight: 500;
+  padding: 4px 10px; border-radius: 3px;
+  background: rgba(100,255,218,0.08);
+  color: var(--teal);
+  border: 1px solid rgba(100,255,218,0.2);
+  letter-spacing: 0.08em;
+}
+
+/* ========== PROCESS BRIDGE ========== */
+#process { background: var(--navy-light); }
+.process-steps {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 0; margin-top: 56px;
+  position: relative;
+}
+.process-steps::after {
+  content: '';
+  position: absolute; top: 40px; left: 12%; right: 12%; height: 2px;
+  background: linear-gradient(90deg, var(--orange), rgba(255,107,53,0.2), var(--teal));
+  z-index: 0;
+}
+.process-step { text-align: center; padding: 0 20px; position: relative; z-index: 1; }
+.step-num {
+  width: 80px; height: 80px; border-radius: 50%;
+  background: var(--navy);
+  border: 2px solid var(--orange);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 800; color: var(--orange);
+  margin: 0 auto 20px;
+}
+.process-step:nth-child(4) .step-num { border-color: var(--teal); color: var(--teal); }
+.step-title { font-size: 16px; font-weight: 600; color: white; margin-bottom: 8px; }
+.step-desc { font-size: 13px; color: var(--steel); line-height: 1.6; }
+
+/* ========== CASE STUDIES ========== */
+#case-studies { background: var(--navy); }
+.cases-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; margin-top: 56px; }
+
+.case-card {
+  background: var(--navy-light);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.case-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(0,0,0,0.4); border-color: rgba(255,107,53,0.3); }
+
+.case-header { padding: 24px 24px 0; }
+.case-type {
+  font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase;
+  padding: 4px 10px; border-radius: 3px;
+  display: inline-block; margin-bottom: 14px;
+}
+.type-corp { background: rgba(255,107,53,0.1); color: var(--orange); }
+.type-local { background: rgba(100,255,218,0.08); color: var(--teal); }
+
+.case-client { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: white; margin-bottom: 8px; }
+.case-industry { font-size: 13px; color: var(--steel); margin-bottom: 16px; }
+.case-result-bar { height: 3px; background: linear-gradient(90deg, var(--orange), rgba(255,107,53,0.2)); }
+.type-local ~ * .case-result-bar { background: linear-gradient(90deg, var(--teal), rgba(100,255,218,0.1)); }
+.case-body { padding: 20px 24px 24px; }
+.case-challenge { font-size: 13px; color: var(--steel); margin-bottom: 16px; line-height: 1.6; }
+
+.case-results { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 16px; }
+.result-metric { text-align: center; }
+.result-value { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 800; color: var(--orange); }
+.type-local-card .result-value { color: var(--teal); }
+.result-label { font-size: 11px; color: var(--steel); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; }
+
+.case-services { display: flex; flex-wrap: wrap; gap: 6px; }
+.case-tag { font-size: 11px; padding: 3px 9px; border-radius: 20px; background: rgba(255,255,255,0.05); color: var(--steel-light); border: 1px solid rgba(255,255,255,0.08); }
+
+/* ========== TESTIMONIALS ========== */
+#testimonials { background: var(--navy-light); }
+.testimonials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 56px; }
+
+.testimonial-card {
+  background: var(--navy);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 12px;
+  padding: 32px;
+  position: relative;
+  transition: all 0.3s;
+}
+.testimonial-card:hover { border-color: rgba(255,107,53,0.25); }
+.testimonial-card::before {
+  content: '"';
+  position: absolute; top: 16px; right: 24px;
+  font-family: 'Playfair Display', serif;
+  font-size: 80px; font-weight: 800; color: rgba(255,107,53,0.08);
+  line-height: 1;
+}
+
+.testimonial-stars { display: flex; gap: 3px; margin-bottom: 16px; }
+.star { color: var(--gold); font-size: 14px; }
+.testimonial-text { font-size: 15px; color: var(--text-primary); line-height: 1.75; margin-bottom: 20px; font-style: italic; }
+.testimonial-author { display: flex; align-items: center; gap: 12px; }
+.author-avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--orange), var(--orange-dark));
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 15px; color: white;
+}
+.local-test .author-avatar { background: linear-gradient(135deg, var(--teal), #0fa37a); color: var(--navy); }
+.author-name { font-size: 15px; font-weight: 600; color: white; }
+.author-title { font-size: 12px; color: var(--steel); margin-top: 2px; }
+.testimonial-type-tag {
+  position: absolute; top: 20px; left: 20px;
+  font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 3px 8px; border-radius: 3px;
+}
+.corp-tag { background: rgba(255,107,53,0.1); color: var(--orange); }
+.local-tag { background: rgba(100,255,218,0.08); color: var(--teal); }
+
+/* ========== CONTACT ========== */
+#contact { background: var(--navy); }
+.contact-dual { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 56px; }
+
+.contact-form-wrapper {
+  background: var(--navy-light);
+  border-radius: 16px; padding: 36px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.contact-form-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; color: white; margin-bottom: 6px; }
+.contact-form-sub { font-size: 14px; color: var(--steel); margin-bottom: 28px; }
+
+.form-group { margin-bottom: 18px; }
+.form-group label { display: block; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--steel); margin-bottom: 6px; }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  padding: 12px 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px; color: var(--text-primary);
+  outline: none; transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus { border-color: var(--orange); }
+.form-group select { appearance: none; cursor: pointer; }
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: var(--steel); }
+.form-group select option { background: var(--navy-light); color: var(--text-primary); }
+.form-accent { border-top: 2px solid var(--orange) !important; }
+.form-accent-teal { border-top: 2px solid var(--teal) !important; }
+.form-btn { width: 100%; margin-top: 8px; justify-content: center; font-size: 15px; }
+
+/* ========== FOOTER ========== */
+footer {
+  background: #061020;
+  border-top: 1px solid rgba(255,107,53,0.15);
+  padding: 60px 5% 32px;
+}
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+
+.footer-brand .nav-logo { margin-bottom: 16px; display: inline-flex; }
+.footer-desc { font-size: 14px; color: var(--steel); line-height: 1.7; margin-bottom: 20px; max-width: 280px; }
+.footer-address { font-size: 13px; color: var(--steel); line-height: 1.7; }
+.footer-address strong { color: var(--steel-light); }
+.footer-social { display: flex; gap: 10px; margin-top: 20px; }
+.social-btn {
+  width: 36px; height: 36px; border-radius: 6px;
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; color: var(--steel-light); text-decoration: none;
+  transition: all 0.2s;
+}
+.social-btn:hover { background: rgba(255,107,53,0.1); border-color: rgba(255,107,53,0.3); color: var(--orange); }
+
+.footer-col-title { font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: white; margin-bottom: 20px; }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a { text-decoration: none; font-size: 14px; color: var(--steel); transition: color 0.2s; }
+.footer-links a:hover { color: var(--orange); }
+
+.footer-bottom {
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+}
+.footer-copy { font-size: 13px; color: var(--steel); }
+.footer-copy a { color: var(--orange); text-decoration: none; }
+.footer-legal { display: flex; gap: 20px; }
+.footer-legal a { font-size: 13px; color: var(--steel); text-decoration: none; transition: color 0.2s; }
+.footer-legal a:hover { color: var(--steel-light); }
+
+/* ========== FLOATING CTA ========== */
+.floating-cta {
+  position: fixed; bottom: 32px; right: 32px; z-index: 900;
+  display: flex; flex-direction: column; gap: 10px;
+  opacity: 0; transform: translateY(20px);
+  transition: all 0.3s;
+  pointer-events: none;
+}
+.floating-cta.visible { opacity: 1; transform: translateY(0); pointer-events: all; }
+.float-btn {
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 13px; font-weight: 600;
+  text-decoration: none;
+  display: flex; align-items: center; gap: 8px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  transition: all 0.2s;
+}
+.float-corp { background: var(--orange); color: white; }
+.float-corp:hover { background: var(--orange-dark); transform: translateX(-2px); }
+.float-local { background: rgba(100,255,218,0.15); color: var(--teal); border: 1px solid rgba(100,255,218,0.3); }
+.float-local:hover { background: rgba(100,255,218,0.2); transform: translateX(-2px); }
+
+/* ========== ANIMATIONS ========== */
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.in-view { opacity: 1; transform: translateY(0); }
+.reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal-left.in-view { opacity: 1; transform: translateX(0); }
+.reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal-right.in-view { opacity: 1; transform: translateX(0); }
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+
+/* ========== COUNTER ANIMATION ========== */
+.counter-num { display: inline-block; }
+
+/* ========== MOBILE NAV ========== */
+.mobile-nav { display: none; position: fixed; inset: 0; z-index: 999; background: var(--navy-light); padding: 80px 5% 40px; overflow-y: auto; transition: all 0.3s; transform: translateX(100%); }
+.mobile-nav.open { transform: translateX(0); }
+.mobile-nav-links { list-style: none; }
+.mobile-nav-links li { border-bottom: 1px solid rgba(255,255,255,0.06); }
+.mobile-nav-links a { display: block; padding: 18px 0; font-size: 18px; color: var(--text-primary); text-decoration: none; font-weight: 500; }
+.mobile-nav-links a:hover { color: var(--orange); }
+.mobile-nav-btns { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; }
+.close-menu { position: absolute; top: 20px; right: 5%; background: none; border: none; color: var(--steel-light); font-size: 28px; cursor: pointer; padding: 4px; }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+  .services-dual { gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+}
+
+@media (max-width: 900px) {
+  .hero-split { flex-direction: column; }
+  .hero-corp, .hero-local { flex: none; min-height: 50vh; text-align: center; align-items: center; }
+  .hero-local .hero-sub, .hero-local .hero-industries { margin-left: 0; }
+  .hero-local .hero-industries { justify-content: center; }
+  .hero-local .hero-stats { justify-content: center; }
+  .stat-item { text-align: center; }
+  .hero-divider { display: none; }
+  .hero-center { display: none; }
+  .services-dual { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr 1fr; }
+  .process-steps::after { display: none; }
+  .contact-dual { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  section { padding: 70px 5%; }
+  .cases-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .ai-grid { grid-template-columns: 1fr; }
+  .floating-cta { bottom: 20px; right: 20px; }
+  .float-btn { font-size: 12px; padding: 10px 16px; }
+  .hero-corp, .hero-local { padding: 60px 5%; }
+}
+
+@media (max-width: 480px) {
+  .hero-stats { flex-direction: column; gap: 16px; }
+  .process-steps { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="main-nav">
+  <a href="#" class="nav-logo" aria-label="OperatorLLC Home">
+    <div class="nav-logo-icon">OR</div>
+    <span class="nav-logo-text">Oparetor<span>LLC</span></span>
+  </a>
+  <ul class="nav-links" role="navigation" aria-label="Main navigation">
+    <li><a href="#services">Services <span class="nav-badge badge-corp">B2B</span><span class="nav-badge badge-local">Local</span></a></li>
+    <li><a href="#ai-services">AI Edge</a></li>
+    <li><a href="#case-studies">Results</a></li>
+    <li><a href="#testimonials">Clients</a></li>
+    <li><a href="#contact" class="nav-cta">Get Started →</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Open menu" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+  <button class="close-menu" onclick="toggleMenu()" aria-label="Close menu">×</button>
+  <ul class="mobile-nav-links">
+    <li><a href="#services" onclick="toggleMenu()">Corporate Services</a></li>
+    <li><a href="#services" onclick="toggleMenu()">Local Growth</a></li>
+    <li><a href="#ai-services" onclick="toggleMenu()">AI Edge 2026</a></li>
+    <li><a href="#process" onclick="toggleMenu()">Our Process</a></li>
+    <li><a href="#case-studies" onclick="toggleMenu()">Case Studies</a></li>
+    <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+  </ul>
+  <div class="mobile-nav-btns">
+    <a href="#contact" class="btn btn-primary" onclick="toggleMenu()">Corporate Inquiry →</a>
+    <a href="#contact" class="btn btn-outline" onclick="toggleMenu()">Local Business Inquiry →</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero" aria-label="Hero">
+  <div class="hero-bg">
+    <div class="hero-grid-lines" aria-hidden="true"></div>
+  </div>
+  <div class="hero-split">
+    <!-- Divider line -->
+    <div class="hero-divider" aria-hidden="true"></div>
+
+    <!-- CENTER BADGE -->
+    <div class="hero-center" aria-hidden="true">
+      <div class="hero-logo-badge">OR</div>
+      <div style="font-size:11px;color:var(--steel);letter-spacing:0.15em;text-transform:uppercase;font-weight:500;">Digital Growth Architects</div>
+    </div>
+
+    <!-- LEFT: CORPORATE -->
+    <div class="hero-corp reveal-left">
+      <span class="hero-sector-tag tag-corp">Corporate &amp; Industrial</span>
+      <h1 class="hero-headline">
+        Enterprise Scale.<br>
+        <span class="accent">Market<br>Dominance.</span>
+      </h1>
+      <p class="hero-sub">We build digital ecosystems for Real Estate firms, Steel manufacturers, Industrial builders, and B2B enterprises — turning corporate authority into market dominance.</p>
+      <div class="hero-industries" role="list">
+        <span class="ind-badge" role="listitem">🏗️ Real Estate</span>
+        <span class="ind-badge" role="listitem">⚙️ Manufacturing</span>
+        <span class="ind-badge" role="listitem">🔩 Steel Industry</span>
+        <span class="ind-badge" role="listitem">🏭 Industrial</span>
+      </div>
+      <a href="#contact" class="btn btn-primary">Book Corporate Strategy Call →</a>
+      <div class="hero-stats" role="list">
+        <div class="stat-item" role="listitem">
+          <div class="stat-number"><span class="counter-num" data-target="50">0</span>M<span class="stat-accent">+</span></div>
+          <div class="stat-label">Revenue Generated</div>
+        </div>
+        <div class="stat-item" role="listitem">
+          <div class="stat-number"><span class="counter-num" data-target="40">0</span><span class="stat-accent">+</span></div>
+          <div class="stat-label">B2B Clients Served</div>
+        </div>
+        <div class="stat-item" role="listitem">
+          <div class="stat-number"><span class="counter-num" data-target="320">0</span><span class="stat-accent">%</span></div>
+          <div class="stat-label">Avg. Lead Increase</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: LOCAL -->
+    <div class="hero-local reveal-right">
+      <span class="hero-sector-tag tag-local">Local &amp; E-commerce</span>
+      <h2 class="hero-headline">
+        Community Roots.<br>
+        <span class="accent-teal">Digital<br>Growth.</span>
+      </h2>
+      <p class="hero-sub">We transform local e-commerce brands, service businesses, and community stores into recognized names — from Amazon storefronts to neighborhood landmarks.</p>
+      <div class="hero-industries" role="list">
+        <span class="ind-badge" role="listitem">🛍️ E-commerce</span>
+        <span class="ind-badge" role="listitem">🌿 Local Brands</span>
+        <span class="ind-badge" role="listitem">📱 Social Commerce</span>
+        <span class="ind-badge" role="listitem">🗺️ Local SEO</span>
+      </div>
+      <a href="#contact" class="btn btn-outline">Grow Your Local Business →</a>
+      <div class="hero-stats" role="list">
+        <div class="stat-item" role="listitem">
+          <div class="stat-number"><span class="counter-num" data-target="120">0</span><span class="stat-accent">+</span></div>
+          <div class="stat-label">Local Brands Scaled</div>
+        </div>
+        <div class="stat-item" role="listitem">
+          <div class="stat-number"><span class="counter-num" data-target="4.9">0</span><span class="stat-accent">★</span></div>
+          <div class="stat-label">Client Rating</div>
+        </div>
+        <div class="stat-item" role="listitem">
+          <div class="stat-number"><span class="counter-num" data-target="180">0</span><span class="stat-accent">%</span></div>
+          <div class="stat-label">Avg. Sales Lift</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="scroll-dot"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div id="trust-bar" role="complementary" aria-label="Client trust indicators">
+  <div class="trust-inner">
+    <span class="trust-label">Trusted by</span>
+    <div class="trust-clients" role="list">
+      <span class="client-name" role="listitem">KeyStone Holdings</span>
+      <div class="trust-divider" aria-hidden="true"></div>
+      <span class="client-name" role="listitem">Saree Elysium</span>
+      <div class="trust-divider" aria-hidden="true"></div>
+      <span class="client-name" role="listitem">Oleander Leather</span>
+      <div class="trust-divider" aria-hidden="true"></div>
+      <span class="client-name" role="listitem">Take Yours</span>
+    </div>
+    <div class="trust-badges" role="list" aria-label="Industry specializations">
+      <span class="ind-chip chip-real" role="listitem">Real Estate</span>
+      <span class="ind-chip chip-mfg" role="listitem">Manufacturing</span>
+      <span class="ind-chip chip-steel" role="listitem">Industrial</span>
+      <span class="ind-chip chip-ecom" role="listitem">E-commerce</span>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" aria-labelledby="services-title">
+  <div class="reveal">
+    <span class="section-tag">What We Do</span>
+    <h2 id="services-title" class="section-title">Full-Stack Digital Growth<br>for <span class="accent">Every Scale</span></h2>
+    <p class="section-sub">From steel manufacturers winning enterprise contracts to local boutiques dominating their neighborhood — we have the playbook.</p>
+  </div>
+
+  <div class="services-dual">
+    <!-- CORPORATE COLUMN -->
+    <div class="corp-col reveal-left delay-1">
+      <div class="services-col-header">
+        <div class="col-icon">🏭</div>
+        <div>
+          <div class="col-title">Corporate &amp; B2B</div>
+          <div class="col-subtitle">Real Estate · Steel · Manufacturing · Industrial</div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <span class="service-num mono">01</span>
+        <div class="service-info">
+          <div class="service-name">B2B Digital Strategy &amp; Market Penetration</div>
+          <div class="service-desc">Full-funnel strategies for high-ticket B2B markets with account-level targeting.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">02</span>
+        <div class="service-info">
+          <div class="service-name">Industrial SEO &amp; Technical Optimization</div>
+          <div class="service-desc">Rank for high-intent keywords in Real Estate, Steel and Manufacturing verticals.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">03</span>
+        <div class="service-info">
+          <div class="service-name">LinkedIn Marketing &amp; Executive Branding</div>
+          <div class="service-desc">Personal brand programs for C-suite leaders and decision-makers.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">04</span>
+        <div class="service-info">
+          <div class="service-name">Account-Based Marketing (ABM)</div>
+          <div class="service-desc">Hyper-personalized campaigns targeting specific enterprise accounts.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">05</span>
+        <div class="service-info">
+          <div class="service-name">Corporate Website Development</div>
+          <div class="service-desc">Next.js / Headless CMS builds optimized for lead generation and authority.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">06</span>
+        <div class="service-info">
+          <div class="service-name">CRO for High-Ticket Sales</div>
+          <div class="service-desc">Conversion optimization specifically engineered for 5-7 figure deal flows.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">07</span>
+        <div class="service-info">
+          <div class="service-name">Marketing Automation &amp; CRM Integration</div>
+          <div class="service-desc">Salesforce, HubSpot, and custom automation for enterprise sales pipelines.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">08</span>
+        <div class="service-info">
+          <div class="service-name">Corporate Brand Strategy &amp; PR</div>
+          <div class="service-desc">Positioning, media placement, reputation management for industrial leaders.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+    </div>
+
+    <!-- LOCAL COLUMN -->
+    <div class="local-col reveal-right delay-1">
+      <div class="services-col-header">
+        <div class="col-icon">🛍️</div>
+        <div>
+          <div class="col-title">Local &amp; E-commerce</div>
+          <div class="col-subtitle">Boutiques · Brands · Service Businesses · Amazon</div>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <span class="service-num mono">01</span>
+        <div class="service-info">
+          <div class="service-name">Local SEO &amp; Google Business Optimization</div>
+          <div class="service-desc">Own the local map pack and "near me" searches in your city.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">02</span>
+        <div class="service-info">
+          <div class="service-name">Social Media Management</div>
+          <div class="service-desc">Platform-native content that builds community and drives conversions.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">03</span>
+        <div class="service-info">
+          <div class="service-name">E-commerce Growth Marketing</div>
+          <div class="service-desc">Amazon, Etsy, Shopify, and local marketplace optimization and scaling.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">04</span>
+        <div class="service-info">
+          <div class="service-name">Hyper-Targeted PPC for Local Markets</div>
+          <div class="service-desc">Google and Meta campaigns built for local ROI with neighborhood-level precision.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">05</span>
+        <div class="service-info">
+          <div class="service-name">Local Influencer &amp; Community Partnerships</div>
+          <div class="service-desc">Authentic community marketing that builds genuine brand advocates.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">06</span>
+        <div class="service-info">
+          <div class="service-name">Reputation Management &amp; Review Systems</div>
+          <div class="service-desc">Automated review generation and reputation monitoring for local brands.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">07</span>
+        <div class="service-info">
+          <div class="service-name">App &amp; Product Development</div>
+          <div class="service-desc">Shopify Plus, WooCommerce, and custom platforms for growing stores.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item">
+        <span class="service-num mono">08</span>
+        <div class="service-info">
+          <div class="service-name">Thought Leadership &amp; Brand PR</div>
+          <div class="service-desc">Build the owner's personal brand and business authority in the community.</div>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI SERVICES -->
+<section id="ai-services" aria-labelledby="ai-title">
+  <div class="reveal" style="text-align:center;max-width:700px;margin:0 auto;">
+    <span class="section-tag">2026 Differentiators</span>
+    <h2 id="ai-title" class="section-title">AI-Powered Growth<br><span class="accent-teal">Systems</span></h2>
+    <p class="section-sub" style="margin:0 auto;">While others chase yesterday's tactics, we're building tomorrow's growth engines — AI systems that work for your business 24/7.</p>
+  </div>
+
+  <div class="ai-grid">
+    <div class="ai-card reveal delay-1">
+      <div class="ai-card-icon">🔍</div>
+      <div class="ai-card-code">GEO // Generative Engine Optimization</div>
+      <div class="ai-card-title">AI Search Visibility</div>
+      <div class="ai-card-desc">Get your brand cited by ChatGPT, Perplexity, and Gemini. As AI replaces Google searches, we ensure you're the answer AI gives — for both corporate buyers and local customers.</div>
+      <span class="ai-badge">WORKS FOR: Corporate + Local</span>
+    </div>
+    <div class="ai-card reveal delay-2">
+      <div class="ai-card-icon">🤖</div>
+      <div class="ai-card-code">LLM // Brand Presence Optimization</div>
+      <div class="ai-card-title">ChatGPT &amp; Claude Brand Presence</div>
+      <div class="ai-card-desc">Systematic optimization to make your brand surface in AI-generated recommendations. When a prospect asks AI "who should I hire for industrial SEO?" — they find you.</div>
+      <span class="ai-badge">CORPORATE FOCUS</span>
+    </div>
+    <div class="ai-card reveal delay-3">
+      <div class="ai-card-icon">⚡</div>
+      <div class="ai-card-code">ACS // AI Content Systems</div>
+      <div class="ai-card-title">Automated Industry Content</div>
+      <div class="ai-card-desc">AI-driven content pipelines that produce authoritative industry content at scale — technical articles for manufacturing, market reports for real estate, trend posts for e-commerce.</div>
+      <span class="ai-badge">WORKS FOR: Corporate + Local</span>
+    </div>
+    <div class="ai-card reveal delay-1">
+      <div class="ai-card-icon">🎯</div>
+      <div class="ai-card-code">PLI // Predictive Lead Intelligence</div>
+      <div class="ai-card-title">ML-Powered B2B Prospecting</div>
+      <div class="ai-card-desc">Machine learning models that identify your highest-value prospects before they search for you. Predictive lead scoring that prioritizes sales effort on deals most likely to close.</div>
+      <span class="ai-badge">CORPORATE FOCUS</span>
+    </div>
+    <div class="ai-card reveal delay-2">
+      <div class="ai-card-icon">💬</div>
+      <div class="ai-card-code">CAI // Conversational AI</div>
+      <div class="ai-card-title">Enterprise &amp; Local Chatbots</div>
+      <div class="ai-card-desc">Custom AI assistants trained on your products, services, and FAQs. Enterprise deployments that qualify leads 24/7, and local versions that answer customer questions instantly.</div>
+      <span class="ai-badge">WORKS FOR: Corporate + Local</span>
+    </div>
+    <div class="ai-card reveal delay-3">
+      <div class="ai-card-icon">🚀</div>
+      <div class="ai-card-code">AMA // Autonomous Marketing Agents</div>
+      <div class="ai-card-title">Self-Optimizing Campaign Systems</div>
+      <div class="ai-card-desc">AI agents that monitor, adjust, and optimize your campaigns in real-time — reallocating budget to winning ad sets, pausing underperformers, and generating performance reports automatically.</div>
+      <span class="ai-badge">WORKS FOR: Corporate + Local</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" aria-labelledby="process-title">
+  <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto 0;">
+    <span class="section-tag">Our Methodology</span>
+    <h2 id="process-title" class="section-title">How We <span class="accent">Bridge</span> Corporate &amp; Local</h2>
+    <p class="section-sub" style="margin:0 auto;">A proven 4-phase framework that extracts enterprise-grade strategy and adapts it for every market size.</p>
+  </div>
+  <div class="process-steps">
+    <div class="process-step reveal delay-1">
+      <div class="step-num">01</div>
+      <div class="step-title">Discovery &amp; Audit</div>
+      <div class="step-desc">Deep-dive into your market position, competitive landscape, technical infrastructure, and growth opportunities — corporate or local.</div>
+    </div>
+    <div class="process-step reveal delay-2">
+      <div class="step-num">02</div>
+      <div class="step-title">Strategy Architecture</div>
+      <div class="step-desc">Build a custom growth blueprint: B2B enterprise playbooks for corporate clients, community-first strategies for local brands.</div>
+    </div>
+    <div class="process-step reveal delay-3">
+      <div class="step-num">03</div>
+      <div class="step-title">Execution &amp; Launch</div>
+      <div class="step-desc">Deploy campaigns, build digital assets, activate SEO, and launch AI systems — all coordinated under one strategic umbrella.</div>
+    </div>
+    <div class="process-step reveal delay-4">
+      <div class="step-num">04</div>
+      <div class="step-title">Optimize &amp; Scale</div>
+      <div class="step-desc">Continuous data-driven optimization, monthly reporting, and strategic scaling to maintain growth momentum.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section id="case-studies" aria-labelledby="cases-title">
+  <div class="reveal">
+    <span class="section-tag">Proven Results</span>
+    <h2 id="cases-title" class="section-title">Client <span class="accent">Success</span> Stories</h2>
+    <p class="section-sub">Real growth numbers from real clients. Both corporate scale and local community wins.</p>
+  </div>
+
+  <div class="cases-grid">
+    <!-- CASE 1: Corporate -->
+    <div class="case-card reveal delay-1" role="article">
+      <div class="case-header">
+        <div><span class="case-type type-corp">Corporate / Real Estate</span></div>
+        <div class="case-client">KeyStone Holdings LTD</div>
+        <div class="case-industry">Luxury Real Estate Development · Dhaka, Bangladesh</div>
+      </div>
+      <div class="case-result-bar"></div>
+      <div class="case-body">
+        <div class="case-challenge">KeyStone Holdings needed a powerful digital presence to attract high-net-worth buyers for their luxury residential projects and establish authority in a competitive real estate market.</div>
+        <div class="case-results">
+          <div class="result-metric"><div class="result-value">5.2K</div><div class="result-label">FB Followers</div></div>
+          <div class="result-metric"><div class="result-value">441</div><div class="result-label">Content Posts</div></div>
+          <div class="result-metric"><div class="result-value">3×</div><div class="result-label">Inquiry Rate</div></div>
+        </div>
+        <div class="case-services">
+          <span class="case-tag">Corporate Website</span>
+          <span class="case-tag">Real Estate SEO</span>
+          <span class="case-tag">Social Strategy</span>
+          <span class="case-tag">Brand Positioning</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASE 2: Local E-commerce -->
+    <div class="case-card type-local-card reveal delay-2" role="article">
+      <div class="case-header">
+        <div><span class="case-type type-local">Local E-commerce / Fashion</span></div>
+        <div class="case-client">Saree Elysium</div>
+        <div class="case-industry">Women's Clothing &amp; Saree Store · E-commerce</div>
+      </div>
+      <div class="case-result-bar" style="background:linear-gradient(90deg,var(--teal),rgba(100,255,218,0.1))"></div>
+      <div class="case-body">
+        <div class="case-challenge">Saree Elysium needed to transform a traditional garment business into a modern e-commerce brand with 10,000+ engaged followers and a consistent visual identity.</div>
+        <div class="case-results">
+          <div class="result-metric"><div class="result-value" style="color:var(--teal)">10K</div><div class="result-label">Followers</div></div>
+          <div class="result-metric"><div class="result-value" style="color:var(--teal)">31</div><div class="result-label">Posts Live</div></div>
+          <div class="result-metric"><div class="result-value" style="color:var(--teal)">4.8★</div><div class="result-label">Brand Score</div></div>
+        </div>
+        <div class="case-services">
+          <span class="case-tag">Social Media Mgmt</span>
+          <span class="case-tag">Brand Strategy</span>
+          <span class="case-tag">Content Creation</span>
+          <span class="case-tag">Community Growth</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASE 3: Local Product Brand -->
+    <div class="case-card type-local-card reveal delay-3" role="article">
+      <div class="case-header">
+        <div><span class="case-type type-local">E-commerce / Leather Goods</span></div>
+        <div class="case-client">Oleander Leather</div>
+        <div class="case-industry">Handcrafted Leather Goods · USA / Amazon</div>
+      </div>
+      <div class="case-result-bar" style="background:linear-gradient(90deg,var(--teal),rgba(100,255,218,0.1))"></div>
+      <div class="case-body">
+        <div class="case-challenge">Oleander Leather needed Amazon marketplace optimization, brand storytelling, and a digital presence that conveyed the artisanal quality of their full-grain leather products.</div>
+        <div class="case-results">
+          <div class="result-metric"><div class="result-value" style="color:var(--teal)">Amazon</div><div class="result-label">Listed</div></div>
+          <div class="result-metric"><div class="result-value" style="color:var(--teal)">USA</div><div class="result-label">Shipping</div></div>
+          <div class="result-metric"><div class="result-value" style="color:var(--teal)">↑Sales</div><div class="result-label">Growth</div></div>
+        </div>
+        <div class="case-services">
+          <span class="case-tag">Amazon Optimization</span>
+          <span class="case-tag">Brand Storytelling</span>
+          <span class="case-tag">Product Marketing</span>
+          <span class="case-tag">Facebook Ads</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASE 4: Artist / Creator -->
+    <div class="case-card reveal delay-1" role="article">
+      <div class="case-header">
+        <div><span class="case-type type-corp">Creator Economy / Artist</span></div>
+        <div class="case-client">Take Yours</div>
+        <div class="case-industry">Artist &amp; Content Creator · Miami, Florida</div>
+      </div>
+      <div class="case-result-bar"></div>
+      <div class="case-body">
+        <div class="case-challenge">Take Yours needed a unified digital presence spanning Facebook, YouTube, and other platforms — building an audience from scratch and establishing their community for free creative learning.</div>
+        <div class="case-results">
+          <div class="result-metric"><div class="result-value">Multi</div><div class="result-label">Platform</div></div>
+          <div class="result-metric"><div class="result-value">YouTube</div><div class="result-label">Channel Active</div></div>
+          <div class="result-metric"><div class="result-value">24/7</div><div class="result-label">Online</div></div>
+        </div>
+        <div class="case-services">
+          <span class="case-tag">Social Management</span>
+          <span class="case-tag">YouTube Strategy</span>
+          <span class="case-tag">Personal Branding</span>
+          <span class="case-tag">Community Building</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" aria-labelledby="testimonials-title">
+  <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto;">
+    <span class="section-tag">Client Voices</span>
+    <h2 id="testimonials-title" class="section-title">What Our Clients <span class="accent">Say</span></h2>
+    <p class="section-sub" style="margin:0 auto;">Corporate executives and local entrepreneurs alike — here's the impact we've delivered.</p>
+  </div>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal delay-1">
+      <span class="testimonial-type-tag corp-tag">Corporate</span>
+      <div class="testimonial-stars" aria-label="5 stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+      </div>
+      <p class="testimonial-text">"OperatorLLC didn't just build us a website — they built us a sales machine. Our B2B inquiries tripled in the first quarter. Their understanding of the luxury real estate market is unmatched."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar" aria-hidden="true">KH</div>
+        <div>
+          <div class="author-name">KeyStone Holdings</div>
+          <div class="author-title">Real Estate Developer · Dhaka, Bangladesh</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card local-test reveal delay-2">
+      <span class="testimonial-type-tag local-tag">Local E-commerce</span>
+      <div class="testimonial-stars" aria-label="5 stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+      </div>
+      <p class="testimonial-text">"From 0 to 10,000 followers in months. The team at OperatorLLC understood our brand — the elegance, the culture, the customer. Our online sales are now a real revenue stream we depend on."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar" aria-hidden="true">SE</div>
+        <div>
+          <div class="author-name">Saree Elysium</div>
+          <div class="author-title">Women's Clothing Brand · E-commerce</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card local-test reveal delay-3">
+      <span class="testimonial-type-tag local-tag">E-commerce</span>
+      <div class="testimonial-stars" aria-label="5 stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+      </div>
+      <p class="testimonial-text">"They got us on Amazon and made our leather goods tell their own story. The quality of our products finally matches the quality of our marketing. Customers feel it instantly."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar" aria-hidden="true">OL</div>
+        <div>
+          <div class="author-name">Oleander Leather</div>
+          <div class="author-title">Handcrafted Leather Goods · USA</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal delay-4">
+      <span class="testimonial-type-tag corp-tag">Creator</span>
+      <div class="testimonial-stars" aria-label="5 stars">
+        <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+      </div>
+      <p class="testimonial-text">"OperatorLLC helped me build a real community around my art. Multi-platform, consistent, professional — everything I couldn't do alone. My YouTube and Facebook are now real platforms, not ghost pages."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar" aria-hidden="true">TY</div>
+        <div>
+          <div class="author-name">Take Yours</div>
+          <div class="author-title">Artist &amp; Creator · Miami, FL</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-labelledby="contact-title">
+  <div class="reveal" style="text-align:center;max-width:600px;margin:0 auto;">
+    <span class="section-tag">Work With Us</span>
+    <h2 id="contact-title" class="section-title">Let's Build Your <span class="accent">Growth Story</span></h2>
+    <p class="section-sub" style="margin:0 auto;">Whether you're a corporate enterprise or a local brand ready to scale — we have the strategy and the tools to get you there.</p>
+  </div>
+
+  <div class="contact-dual">
+    <!-- CORPORATE FORM -->
+    <div class="contact-form-wrapper form-accent reveal-left delay-1">
+      <div class="contact-form-title">Corporate Inquiry</div>
+      <div class="contact-form-sub">For B2B enterprises, real estate firms, manufacturers, and industrial companies.</div>
+      <form aria-label="Corporate contact form" onsubmit="handleForm(event, 'corporate')">
+        <div class="form-group">
+          <label for="corp-name">Full Name</label>
+          <input type="text" id="corp-name" name="name" placeholder="John Smith" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="corp-company">Company Name</label>
+          <input type="text" id="corp-company" name="company" placeholder="Acme Steel Corp" required autocomplete="organization">
+        </div>
+        <div class="form-group">
+          <label for="corp-email">Business Email</label>
+          <input type="email" id="corp-email" name="email" placeholder="john@company.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="corp-industry">Industry</label>
+          <select id="corp-industry" name="industry" required>
+            <option value="" disabled selected>Select your industry</option>
+            <option>Real Estate &amp; Construction</option>
+            <option>Steel &amp; Metals</option>
+            <option>Manufacturing &amp; Industrial</option>
+            <option>Technology &amp; SaaS</option>
+            <option>Professional Services</option>
+            <option>Other B2B</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="corp-budget">Monthly Budget Range</label>
+          <select id="corp-budget" name="budget">
+            <option value="" disabled selected>Select budget range</option>
+            <option>$2,000 – $5,000/mo</option>
+            <option>$5,000 – $15,000/mo</option>
+            <option>$15,000 – $50,000/mo</option>
+            <option>$50,000+/mo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="corp-message">Growth Objective</label>
+          <textarea id="corp-message" name="message" placeholder="Describe your current challenges and what growth means for your business..." rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-btn">Book Corporate Strategy Call →</button>
+      </form>
+    </div>
+
+    <!-- LOCAL FORM -->
+    <div class="contact-form-wrapper form-accent-teal reveal-right delay-1">
+      <div class="contact-form-title">Local Business Inquiry</div>
+      <div class="contact-form-sub">For local stores, e-commerce brands, service businesses, and growing entrepreneurs.</div>
+      <form aria-label="Local business contact form" onsubmit="handleForm(event, 'local')">
+        <div class="form-group">
+          <label for="local-name">Your Name</label>
+          <input type="text" id="local-name" name="name" placeholder="Jane Doe" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="local-business">Business Name</label>
+          <input type="text" id="local-business" name="business" placeholder="Your Business Name" required autocomplete="organization">
+        </div>
+        <div class="form-group">
+          <label for="local-email">Email Address</label>
+          <input type="email" id="local-email" name="email" placeholder="jane@yourbusiness.com" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="local-type">Business Type</label>
+          <select id="local-type" name="type" required>
+            <option value="" disabled selected>Select your business type</option>
+            <option>E-commerce Store (Shopify, Amazon, Etsy)</option>
+            <option>Local Retail / Boutique</option>
+            <option>Restaurant / Food &amp; Beverage</option>
+            <option>Service Business</option>
+            <option>Artist / Creator</option>
+            <option>Fashion / Apparel</option>
+            <option>Other Local Business</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="local-goal">Primary Goal</label>
+          <select id="local-goal" name="goal">
+            <option value="" disabled selected>What do you need most?</option>
+            <option>More online sales</option>
+            <option>Local customer traffic</option>
+            <option>Social media growth</option>
+            <option>Brand identity</option>
+            <option>Amazon / marketplace presence</option>
+            <option>All of the above</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="local-message">Tell Us About Your Business</label>
+          <textarea id="local-message" name="message" placeholder="Tell us about your business, your current marketing, and what growth looks like for you..." rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline form-btn" style="border-color:rgba(100,255,218,0.4);color:var(--teal);">Start Local Growth Journey →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success message (hidden by default) -->
+  <div id="form-success" role="alert" aria-live="polite" style="display:none;text-align:center;padding:40px;background:var(--navy-light);border-radius:12px;border:1px solid rgba(100,255,218,0.2);margin-top:32px;">
+    <div style="font-size:40px;margin-bottom:16px;">✓</div>
+    <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:white;margin-bottom:8px;">Message Received!</h3>
+    <p style="color:var(--steel-light);">Our team will be in touch within 24 hours. We look forward to building your growth story.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" aria-label="OperatorLLC Home">
+        <div class="nav-logo-icon">OR</div>
+        <span class="nav-logo-text">Oparetor<span>LLC</span></span>
+      </a>
+      <p class="footer-desc">Full-Service Digital Growth &amp; Brand Building Agency. Bridging Corporate Scale with Local Agility since 2022.</p>
+      <address class="footer-address" style="font-style:normal;">
+        <strong>Austin, Texas, USA</strong><br>
+        Primary HQ — Serving globally<br>
+        <a href="mailto:hello@operatorllc.com" style="color:var(--orange);text-decoration:none;">hello@operatorllc.com</a>
+      </address>
+      <div class="footer-social" role="list" aria-label="Social media links">
+        <a href="#" class="social-btn" aria-label="LinkedIn" role="listitem">in</a>
+        <a href="#" class="social-btn" aria-label="Twitter/X" role="listitem">𝕏</a>
+        <a href="#" class="social-btn" aria-label="Instagram" role="listitem">IG</a>
+        <a href="#" class="social-btn" aria-label="Facebook" role="listitem">FB</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Corporate Services</div>
+      <ul class="footer-links">
+        <li><a href="#services">B2B Digital Strategy</a></li>
+        <li><a href="#services">Industrial SEO</a></li>
+        <li><a href="#services">LinkedIn Marketing</a></li>
+        <li><a href="#services">ABM Campaigns</a></li>
+        <li><a href="#services">Corporate Web Dev</a></li>
+        <li><a href="#services">CRM Integration</a></li>
+        <li><a href="#services">Brand &amp; PR</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Local Solutions</div>
+      <ul class="footer-links">
+        <li><a href="#services">Local SEO</a></li>
+        <li><a href="#services">Social Media Mgmt</a></li>
+        <li><a href="#services">E-commerce Growth</a></li>
+        <li><a href="#services">Local PPC</a></li>
+        <li><a href="#services">Amazon Marketing</a></li>
+        <li><a href="#services">Influencer Partnerships</a></li>
+        <li><a href="#services">Reputation Mgmt</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">AI &amp; Technology</div>
+      <ul class="footer-links">
+        <li><a href="#ai-services">GEO Optimization</a></li>
+        <li><a href="#ai-services">LLM Brand Presence</a></li>
+        <li><a href="#ai-services">AI Content Systems</a></li>
+        <li><a href="#ai-services">Predictive Lead Intel</a></li>
+        <li><a href="#ai-services">Conversational AI</a></li>
+        <li><a href="#ai-services">Autonomous Agents</a></li>
+        <li><a href="#ai-services">AI Creative Production</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 <a href="#">OperatorLLC</a>. All rights reserved. Austin, Texas, USA.</p>
+    <nav class="footer-legal" aria-label="Legal links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<div class="floating-cta" id="floating-cta" aria-label="Quick contact options">
+  <a href="#contact" class="float-btn float-corp">🏭 Corporate Inquiry</a>
+  <a href="#contact" class="float-btn float-local">🛍️ Local Business</a>
+</div>
+
+<script>
+// ===================== NAVIGATION =====================
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) nav.classList.add('scrolled');
+  else nav.classList.remove('scrolled');
+
+  const floatingCta = document.getElementById('floating-cta');
+  if (window.scrollY > 600) floatingCta.classList.add('visible');
+  else floatingCta.classList.remove('visible');
+});
+
+function toggleMenu() {
+  const mobileNav = document.getElementById('mobile-nav');
+  mobileNav.classList.toggle('open');
+  document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+}
+
+// Close mobile nav on outside click
+document.getElementById('mobile-nav').addEventListener('click', function(e) {
+  if (e.target === this) toggleMenu();
+});
+
+// ===================== SCROLL REVEAL =====================
+const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in-view');
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+revealElements.forEach(el => observer.observe(el));
+
+// ===================== COUNTER ANIMATION =====================
+function animateCounter(el) {
+  const target = parseFloat(el.getAttribute('data-target'));
+  const isDecimal = target % 1 !== 0;
+  const duration = 2000;
+  const step = 50;
+  const increment = target / (duration / step);
+  let current = 0;
+
+  const timer = setInterval(() => {
+    current += increment;
+    if (current >= target) {
+      current = target;
+      clearInterval(timer);
+    }
+    el.textContent = isDecimal ? current.toFixed(1) : Math.floor(current);
+  }, step);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.counter-num').forEach(el => counterObserver.observe(el));
+
+// ===================== FORM HANDLING =====================
+function handleForm(e, type) {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('button[type="submit"]');
+  const originalText = btn.textContent;
+
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  // Simulate form submission (replace with actual API call)
+  setTimeout(() => {
+    form.reset();
+    btn.textContent = '✓ Message Sent!';
+    btn.style.background = 'rgba(100,255,218,0.15)';
+    btn.style.color = 'var(--teal)';
+
+    const successEl = document.getElementById('form-success');
+    successEl.style.display = 'block';
+    successEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+    setTimeout(() => {
+      btn.textContent = originalText;
+      btn.disabled = false;
+      btn.style.background = '';
+      btn.style.color = '';
+    }, 4000);
+  }, 1500);
+}
+
+// ===================== SMOOTH ANCHOR SCROLL =====================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href === '#') return;
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+      const navHeight = document.getElementById('main-nav').offsetHeight;
+      const top = target.offsetTop - navHeight - 16;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
+
+// ===================== INITIAL HERO ANIMATIONS =====================
+document.addEventListener('DOMContentLoaded', () => {
+  // Trigger hero elements immediately
+  setTimeout(() => {
+    document.querySelectorAll('.hero-corp, .hero-local').forEach(el => {
+      el.classList.add('in-view');
+    });
+  }, 200);
+});
+</script>
+</body>
+</html>
